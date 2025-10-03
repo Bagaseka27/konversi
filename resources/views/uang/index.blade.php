@@ -5,7 +5,7 @@
 @push('styles')
 <style>
     body {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+        background: linear-gradient(135deg, #ffffffff 0%, #b1d3f5ff 50%, #5079e1ff 100%);
         min-height: 100vh;
     }
     
@@ -23,7 +23,7 @@
     }
     
     .result-box {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #4661fcff 0%, #8cb6f1ff 100%);
         color: white;
         padding: 30px;
         border-radius: 20px;
@@ -56,8 +56,8 @@
     }
     
     .currency-input:focus {
-        border-color: #667eea;
-        box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        border-color: #c0cbffff;
+        box-shadow: 0 0 0 0.2rem rgba(107, 130, 237, 0.8);
         transform: scale(1.02);
     }
     
@@ -72,12 +72,12 @@
     }
     
     .currency-select:focus {
-        border-color: #764ba2;
-        box-shadow: 0 0 0 0.2rem rgba(118, 75, 162, 0.25);
+        border-color: #9088ffff;
+        box-shadow: 0 0 0 0.2rem rgba(75, 114, 162, 0.25);
     }
     
     .convert-btn {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #667eea 0%, #1951c9ff 100%);
         border: none;
         border-radius: 20px;
         padding: 18px;
@@ -91,7 +91,7 @@
     .convert-btn:hover {
         transform: translateY(-3px) scale(1.03);
         box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
-        background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        background: linear-gradient(135deg, #3750c1ff 0%, #001b54ff  100%);
     }
     
     .info-card {
@@ -107,11 +107,11 @@
     .info-card:hover {
         transform: translateY(-10px);
         box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
-        border-color: #667eea;
+        border-color: #29a6e0ff;
     }
     
     .rate-card {
-        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        background: linear-gradient(135deg, #93a6fbff 0%, #5764f5ff 100%);
         color: white;
         border-radius: 20px;
         padding: 25px;
@@ -122,7 +122,7 @@
     
     .rate-card:hover {
         transform: translateY(-8px) rotate(2deg);
-        box-shadow: 0 15px 40px rgba(245, 87, 108, 0.5);
+        box-shadow: 0 15px 40px rgba(87, 111, 245, 0.5);
     }
     
     .currency-card {
@@ -160,7 +160,7 @@
     }
     
     .table-modern thead {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #8196f6ff 0%, #4840dbff 100%);
         color: white;
     }
     
@@ -189,14 +189,14 @@
     }
     
     .faq-accordion .accordion-button {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #7d92f0ff 0%, #4c61ecff 100%);
         color: white;
         font-weight: bold;
         border-radius: 15px;
     }
     
     .faq-accordion .accordion-button:not(.collapsed) {
-        background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        background: linear-gradient(135deg, #607bf4ff 0%, #3c52dfff 100%);
     }
     
     .swap-btn {
