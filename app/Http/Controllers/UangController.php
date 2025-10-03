@@ -7,21 +7,19 @@ use App\Models\Uang;
 
 class UangController extends Controller
 {
-    public function index()
+    protected $uang;
+
+    public function __construct()
     {
-        return view('uang.index');
+        $this->uang = new Uang();
     }
 
-    public function proses(Request $request)
+    public function index()
     {
-        $konversi = new Uang();
-        $hasil = $konversi->hitung($request->jumlah, $request->asal, $request->tujuan);
+        // Ambil semua data dari Model
+        $currencies = $this->uang->getCurrencyInfo();
+        $kursData = $this->uang->getKurs();
 
-        return view('uang.result', [
-            'jumlah' => $request->jumlah,
-            'asal'   => $request->asal,
-            'tujuan' => $request->tujuan,
-            'hasil'  => $hasil
-        ]);
+        return view('uang.index', compact('currencies', 'kursData'));
     }
 }
